@@ -1,4 +1,34 @@
 # Raices-de-Vida
-https://uvggt-my.sharepoint.com/:w:/g/personal/lou23410_uvg_edu_gt/EQhisJq4oLVCke-tCLpNo6EBgMGpTLevjw1lAp6QTJr-TQ?e=RrZ9a4
-Manejo de tiempo:
-https://uvggt-my.sharepoint.com/:x:/r/personal/lou23410_uvg_edu_gt/Documents/Gestion%20de%20tiempo.xlsx?d=w4f827941ad64495b89f96a70bb98bd98&csf=1&web=1&e=RSleof 
+CHRISTA ISABELLA OBANDO GUZMAN #23074
+ANTHONY LOU SCHWANK #23410
+ROBERTO JOSE BARREDA SIEKAVIZZA #23354 
+ANGGELIE LIZETH VELASQUEZ ASENCIO # 221181
+MIA ALEJANDRA FUENTES MERIDA #23775
+
+*Avances 1 → Contiene:*
+1. Brief.
+2. Descripción de posibles usuarios y usuarios extremos.
+3. Evidencia de la técnica "Qué, Cómo y Por qué".
+4. Componentes del framework AEIOU.
+5. Canva utilizado para la presentación.
+
+*Avances 2/ → Contiene:*
+1. Evidencias del seguimiento de todos los pasos de Design Studio.
+2. Lista de todas las ideas generadas y los sketches de cada miembro.
+3. Lista de ideas más repetidas y votadas a incluir en el producto.
+4. Listado de historias de usuario identificadas.
+
+*Corte 1/ → Incluye:*
+1. Presentación con los hallazgos más importantes de la primera etapa del proyecto.
+2. Documento Guía del primer corte del proyecto_2025.pdf.
+3. Audios de entrevistas y gestión de tiempo en Excel.
+
+*Corte 2/ → Incluye:*
+1. Informe en formato .pdf.
+2. Vínculo al Word utilizado para el trabajo colaborativo.
+3. Gestión de tiempo en Excel
+4. Bitácora de interacción con usuarios y clientes.
+5. Modelos de casos de uso, descripciones de actores e historias de usuario.
+6. Prototipos refinados y evidencia del testeo.
+
+*Scrum/ → Será utilizado más adelante...*
