@@ -30,5 +30,6 @@ MIA ALEJANDRA FUENTES MERIDA #23775
 4. Bitácora de interacción con usuarios y clientes.
 5. Modelos de casos de uso, descripciones de actores e historias de usuario.
 6. Prototipos refinados y evidencia del testeo.
+Link Corte 2: https://uvggt-my.sharepoint.com/:w:/g/personal/lou23410_uvg_edu_gt/EZVONbh4yVtAqyQT81H_4s0BkNSbCVBdOz1_KMfQG-93kA?e=NeMSTm
 
 *Scrum/ → Será utilizado más adelante...*
