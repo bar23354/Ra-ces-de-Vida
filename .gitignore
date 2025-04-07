@@ -1,0 +1,58 @@
+# Dependencias
+node_modules/
+package-lock.json
+yarn.lock
+
+# Variables de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor e IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+docker-data/
+
+# Tests y cobertura
+coverage/
+.nyc_output/
+
+# Builds y compilados
+dist/
+build/
+*.exe
+*.dll
+
+# Base de datos
+*.sqlite
+*.db
+/migrations/*.sql
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Otros
+dump.rdb
+*.pid
+*.seed
+*.log.gz
