@@ -1,38 +1,31 @@
-const express = require('express'); // servira como intermediario entre el server y el usuario.
-const cors = require('cors');
-const bodyParser = require('body-parser');
+const express = require('express');
 const dotenv = require('dotenv');
-const { Pool } = require('pg');
+const sequelize = require('./config/database');
+const authRoutes = require('./routes/authRoutes');
 
-// variables del entorno
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
 
-// Middlewares
-app.use(cors());
-app.use(bodyParser.json());
+// Middleware
+app.use(express.json());
 
-// Conexión a PostgreSQL
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
-});
+// Ver si sí conecta a la BD
+(async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('Conexión a PostgreSQL establecida correctamente.');
+    
+    // No va a alterar las tablas al sincronizarlas
+    await sequelize.sync({ alter: true });
+    console.log('Modelos sincronizados con la base de datos.');
+  } catch (error) {
+    console.error('Error al conectar a PostgreSQL:', error);
+  }
+})();
 
-// Asegurar que estemos conectados a la BD
-pool.connect()
-  .then(() => console.log('Conexión a PostgreSQL exitos!!!'))
-  .catch((err) => console.error('Error al conectar con PostgreSQL:', err));
+// Rutas
+app.use('/api/auth', authRoutes);
 
-// Ruta base
-app.get('/', (req, res) => {
-  res.send('Bienvenido al backend de Raices de Vida');
-});
-
-// Levantar servidor
-app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`); //aca debemos ver que colocamos jeeje
-});
-
-module.exports = { app, pool };
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
