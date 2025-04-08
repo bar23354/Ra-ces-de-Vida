@@ -19,15 +19,27 @@
 
 const { Sequelize } = require('sequelize');
 
-//Config la conexión a la db
-const sequelize = new Sequelize('Proyecto 1', process.env.DB_USER, process.env.DB_PASSWORD, {
-  host: process.env.DB_HOST,
-  dialect: 'postgres',
+// Configuración segura con valores por defecto
+const sequelize = new Sequelize({
+  database: 'Proyecto1',  // Coincide con POSTGRES_DB
+  username: process.env.DB_USER || 'user',      // Valor por defecto 'user'
+  password: process.env.DB_PASSWORD || 'password', // Valor por defecto 'password'
+  host: process.env.DB_HOST || 'db',           // Nombre del servicio en Docker
   port: process.env.DB_PORT || 5432,
+  dialect: 'postgres',
   logging: false,
   define: {
     timestamps: false
+  },
+  retry: {  // ¡Añade reintentos para evitar fallos en Docker!
+    max: 5,
+    timeout: 5000
   }
 });
+
+// Verificación de conexión (opcional pero útil)
+sequelize.authenticate()
+  .then(() => console.log('Conexión a PostgreSQL establecida correctamente.'))
+  .catch(err => console.error('Error de conexión a PostgreSQL:', err));
 
 module.exports = sequelize;
