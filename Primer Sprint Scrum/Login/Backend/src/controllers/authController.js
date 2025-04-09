@@ -72,9 +72,10 @@ exports.login = async (req, res) => {
 
 exports.register = async (req, res) => {
   try {
-    const { nombre, email, password, rol, tipo_referencia, id_referencia } = req.body;
+    const { nombre ,apellido, email, password, rol, tipo_referencia, id_referencia } = req.body;
     const newUser = await User.create({
       nombre,
+      apellido,
       email,
       password,
       rol,
