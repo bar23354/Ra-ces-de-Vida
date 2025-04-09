@@ -1,3 +1,49 @@
+// authService.js
+// Este archivo contiene funciones relacionadas con la autenticación y registro de usuarios.
+// Utiliza el modelo de usuario (User) y utilidades para la generación de tokens JWT (jwtUtils).
+
+// Dependencias requeridas:
+// - User: Modelo que representa a los usuarios en la base de datos.
+// - jwtUtils: Utilidades para la generación y manejo de tokens JWT.
+
+/**
+ * authenticateUser(email, password)
+ * Autentica a un usuario verificando su email y contraseña.
+ * 
+ * @param {string} email - Correo electrónico del usuario.
+ * @param {string} password - Contraseña del usuario.
+ * @returns {string} - Token JWT generado para el usuario autenticado.
+ * @throws {Error} - Si el usuario no existe o las credenciales son inválidas.
+ * 
+ * Proceso:
+ * 1. Busca un usuario en la base de datos con el email proporcionado.
+ * 2. Verifica que la contraseña proporcionada sea válida.
+ * 3. Genera un token JWT con los datos del usuario.
+ */
+
+/**
+ * registerUser(userData)
+ * Registra un nuevo usuario en la base de datos.
+ * 
+ * @param {Object} userData - Datos del usuario a registrar.
+ * @returns {Object} - Objeto del usuario creado.
+ * @throws {Error} - Si el email ya está registrado.
+ * 
+ * Proceso:
+ * 1. Verifica si el email ya está registrado en la base de datos.
+ * 2. Filtra los campos permitidos para el registro.
+ * 3. Crea un nuevo usuario en la base de datos con los datos filtrados.
+ * 
+ * Campos permitidos para el registro:
+ * - nombre
+ * - apellido
+ * - email
+ * - password
+ * - rol
+ * - tipo_referencia
+ * - id_referencia
+ */
+
 const User = require('../models/User');
 const jwtUtils = require('../utils/jwtUtils');
 
@@ -22,7 +68,6 @@ exports.registerUser = async (userData) => {
     throw new Error('El email ya está registrado');
   }
   
-  // Verificar que sean solo campos validos de la tabla
   const allowedFields = [
     'nombre', 'apellido', 'email', 'password', 
     'rol', 'tipo_referencia', 'id_referencia'
