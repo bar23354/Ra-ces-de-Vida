@@ -1,35 +1,54 @@
-# Raices-de-Vida
-CHRISTA ISABELLA OBANDO GUZMAN #23074
-ANTHONY LOU SCHWANK #23410
-ROBERTO JOSE BARREDA SIEKAVIZZA #23354 
-ANGGELIE LIZETH VELASQUEZ ASENCIO # 221181
-MIA ALEJANDRA FUENTES MERIDA #23775
+# Raíces de Vida - Proyecto UVG
 
-*Avances 1 → Contiene:*
-1. Brief.
-2. Descripción de posibles usuarios y usuarios extremos.
-3. Evidencia de la técnica "Qué, Cómo y Por qué".
-4. Componentes del framework AEIOU.
-5. Canva utilizado para la presentación.
+**Integrantes:**
+- Christa Isabella Obando Guzmán (#23074)
+- Anthony Lou Schwank (#23410)
+- Roberto Jose Barreda Siekavizza (#23354)
+- Anggelie Lizeth Velásquez Asencio (#221181)
+- Mia Alejandra Fuentes Mérida (#23775)
 
-*Avances 2/ → Contiene:*
-1. Evidencias del seguimiento de todos los pasos de Design Studio.
-2. Lista de todas las ideas generadas y los sketches de cada miembro.
-3. Lista de ideas más repetidas y votadas a incluir en el producto.
-4. Listado de historias de usuario identificadas.
+## Estructura del Repositorio
 
-*Corte 1/ → Incluye:*
-1. Presentación con los hallazgos más importantes de la primera etapa del proyecto.
-2. Documento Guía del primer corte del proyecto_2025.pdf.
-3. Audios de entrevistas y gestión de tiempo en Excel.
+### Avances 1
+Contiene la documentación inicial del proyecto:
+- `Brief.pdf` - Documento con objetivos y alcance
+- `Usuarios.pdf` - Descripción de usuarios finales y extremos
+- `QueComoPorQue/` - Evidencia de la técnica aplicada
+- `AEIOU/` - Componentes del framework
+- `Presentacion.canva` - Diseño de la presentación inicial
 
-*Corte 2/ → Incluye:*
-1. Informe en formato .pdf.
-2. Vínculo al Word utilizado para el trabajo colaborativo.
-3. Gestión de tiempo en Excel
-4. Bitácora de interacción con usuarios y clientes.
-5. Modelos de casos de uso, descripciones de actores e historias de usuario.
-6. Prototipos refinados y evidencia del testeo.
-Link Corte 2: https://uvggt-my.sharepoint.com/:w:/g/personal/lou23410_uvg_edu_gt/EZVONbh4yVtAqyQT81H_4s0BkNSbCVBdOz1_KMfQG-93kA?e=NeMSTm
+### Avances 2
+Documentación de diseño y requerimientos:
+- `DesignStudio/` - Sketches y proceso de ideación
+- `HistoriasUsuario.md` - Listado de historias priorizadas
 
-*Scrum/ → Será utilizado más adelante...*
+### Corte 1
+Primera entrega formal:
+- `PresentacionHallazgos.pdf`
+- `Guía del Primer Corte`
+- `AudiosEntrevistas/`
+- `Gestión de Tiempo`
+
+### Corte 2
+Segunda entrega formal:
+- `Informe`
+- `Prototipos/` - Imágenes y resultados de testing
+- `Bitacora.md` - Registro de interacciones
+
+### Sprints
+Contiene la documentación de cada sprint:
+
+#### Sprint 1
+- Informe: https://uvggt-my.sharepoint.com/:w:/g/personal/bar23354_uvg_edu_gt/EYbCv4kAEmJPoRHosDkYy1UBsn_K1U3COp477RxONKjSUQ?e=yTIyVl
+- Implementó: Autenticación, registro y Docker
+
+#### Sprint 2 (Submódulo)
+- Informe: https://uvggt-my.sharepoint.com/:w:/g/personal/bar23354_uvg_edu_gt/ETPvlHQGKutDu-yp7NaPM8MByvHNz3GnpCt99qDI7GiMpg?e=cONmWm
+- Implementó: Pantalla Home, gestión de alertas y modo claro/oscuro
+- Acceso al submódulo: `cd sprint2`
+
+## 🛠️ Configuración
+```bash
+git clone https://github.com/bar23354/Ra-ces-de-Vida.git
+cd Ra-ces-de-Vida
+git submodule update --init --recursive
