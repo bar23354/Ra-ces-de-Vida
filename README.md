@@ -47,6 +47,10 @@ Contiene la documentación de cada sprint:
 - Implementó: Pantalla Home, gestión de alertas y modo claro/oscuro
 - Acceso al submódulo: `cd sprint2`
 
+#### Sprint 3 (Submódulo)
+- Informe: https://uvggt-my.sharepoint.com/:w:/g/personal/bar23354_uvg_edu_gt/ETPvlHQGKutDu-yp7NaPM8MByvHNz3GnpCt99qDI7GiMpg?e=cONmWm
+- Acceso al submódulo: `cd sprint3`
+
 ## 🛠️ Configuración
 ```bash
 git clone https://github.com/bar23354/Ra-ces-de-Vida.git
