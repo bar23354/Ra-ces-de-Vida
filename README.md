@@ -58,7 +58,7 @@ Contiene la documentación de cada sprint:
 - Implementó: Backlog completo del producto, backlog del sprint, versión funcional, evidencias en Jira, métricas (burndown y velocidad), estimación de tiempo y costos, integración de pruebas unitarias con su framework y análisis de impacto de las pruebas en el producto final.
 
 ### Sprint 6 (Código en Submódulo)
-- Informe: Pendiente
+- Informe: https://uvggt-my.sharepoint.com/:w:/r/personal/vel221181_uvg_edu_gt/Documents/Sprint%206.docx?d=w8b3d4ce0ec324370996e92f75389be7d&csf=1&web=1&e=H7xPVN
 - Implementó: Backlog del sprint, versión funcional, evidencias de gestión, métricas, cálculo de presupuesto ejecutado, plan maestro de pruebas con resultados y reflexión sobre desempeño del equipo.
 
 ## Configuración
