@@ -10,3 +10,7 @@
 [submodule "sprint 5/sprint 5/sprint 5"]
 	path = sprint 5/sprint 5/sprint 5
 	url = https://github.com/Raices-de-Vida/Raices_de_Vida.git
+[submodule "sprint7"]
+	path = sprint7
+	url = https://github.com/Raices-de-Vida/Raices_de_Vida.git
+	branch = main
