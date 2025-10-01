@@ -14,3 +14,6 @@
 	path = sprint7
 	url = https://github.com/Raices-de-Vida/Raices_de_Vida.git
 	branch = main
+[submodule "sprint 8"]
+	path = sprint 8
+	url = https://github.com/Raices-de-Vida/Raices_de_Vida.git
