@@ -17,3 +17,6 @@
 [submodule "sprint 8"]
 	path = sprint 8
 	url = https://github.com/Raices-de-Vida/Raices_de_Vida.git
+[submodule "sprint_9"]
+	path = sprint_9
+	url = https://github.com/Raices-de-Vida/Raices_de_Vida.git
